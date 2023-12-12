@@ -50,7 +50,6 @@ function power(n, x) {
 }
 // test for power function
 console.log("--- Power Test ---");
-console.log(power(3, 0));
-console.log(power(3, 1));
-console.log(power(3, 2));
-console.log(power(3, 3));
+for (let i = 0; i <= 3; i++) {
+    console.log(power(3, i));
+}
