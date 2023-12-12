@@ -11,3 +11,11 @@ function fibonacci(n) {
 for (let i = 0; i < 10; i++) {
     console.log(fibonacci(i))
 }
+
+// recursive sum function
+function sum(n) {
+    if (n === 0)
+        return n;
+    else
+        return n + sum(n - 1);
+}
