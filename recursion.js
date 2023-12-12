@@ -31,3 +31,7 @@ function factorial(n) {
     else
         return n * factorial(n - 1);
 }
+// displays the factorials of numbers 1 - 10
+for (let i = 1; i < 10; i++) {
+    console.log(factorial(i));
+}
