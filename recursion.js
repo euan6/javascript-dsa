@@ -9,7 +9,7 @@ function fibonacci(n) {
 }
 // displays the first 10 numbers in the sequence
 for (let i = 0; i < 10; i++) {
-    console.log(fibonacci(i))
+    console.log(fibonacci(i));
 }
 
 // recursive sum function
@@ -18,4 +18,8 @@ function sum(n) {
         return n;
     else
         return n + sum(n - 1);
+}
+// displays the sum of all numbers up to and including 10
+for (let i = 1; i <= 10; i++) {
+    console.log(sum(i));
 }
