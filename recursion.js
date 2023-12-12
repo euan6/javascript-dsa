@@ -55,9 +55,12 @@ for (let i = 0; i <= 3; i++) {
 }
 
 // recursive sum array function
-function sumArray(arr, i = 0) {
+function sumArray(arr, i) {
     if (i === arr.length)
         return 0;
     else 
         return arr[i] + sumArray(arr, i + 1);
 }
+// test for sum array function
+console.log("--- Sum Array Test ---");
+console.log(sumArray(arr = [10, 3, 6, 4, 87], 0));
