@@ -53,3 +53,11 @@ console.log("--- Power Test ---");
 for (let i = 0; i <= 3; i++) {
     console.log(power(3, i));
 }
+
+// recursive sum array function
+function sumArray(arr, i = 0) {
+    if (i === arr.length)
+        return 0;
+    else 
+        return arr[i] + sumArray(arr, i + 1);
+}
