@@ -45,3 +45,8 @@ function power(n, x) {
     else
         return n * power(n, x - 1);
 }
+// test for power function
+console.log(power(3, 0));
+console.log(power(3, 1));
+console.log(power(3, 2));
+console.log(power(3, 3));
