@@ -8,6 +8,7 @@ function fibonacci(n) {
         return fibonacci(n - 1) + fibonacci(n - 2);
 }
 // displays the first 10 numbers in the sequence
+console.log("--- Fibonacci Test ---");
 for (let i = 0; i < 10; i++) {
     console.log(fibonacci(i));
 }
@@ -20,6 +21,7 @@ function sum(n) {
         return n + sum(n - 1);
 }
 // displays the sum of all numbers up to and including 10
+console.log("--- Sum Test ---");
 for (let i = 1; i <= 10; i++) {
     console.log(sum(i));
 }
@@ -32,6 +34,7 @@ function factorial(n) {
         return n * factorial(n - 1);
 }
 // displays the factorials of numbers 1 - 10
+console.log("--- Factorial Test ---");
 for (let i = 1; i < 10; i++) {
     console.log(factorial(i));
 }
@@ -46,6 +49,7 @@ function power(n, x) {
         return n * power(n, x - 1);
 }
 // test for power function
+console.log("--- Power Test ---");
 console.log(power(3, 0));
 console.log(power(3, 1));
 console.log(power(3, 2));
