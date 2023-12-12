@@ -35,3 +35,13 @@ function factorial(n) {
 for (let i = 1; i < 10; i++) {
     console.log(factorial(i));
 }
+
+// recursive power function
+function power(n, x) {
+    if (x === 0)
+        return 1;
+    else if ( x === 1)
+        return n;
+    else
+        return n * power(n, x - 1);
+}
