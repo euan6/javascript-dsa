@@ -90,4 +90,25 @@ class SLinkedList {
             return returnedNode.getValue();
         }
     }
+
+    insertMiddle(index) {
+        let newNode = new Node(index);
+        let middle = this.size() / 2;
+        let priorNode = null;
+        let current = this.headNode;
+        for (let i = 0; i < middle; i++) {
+            priorNode = current;
+            current = current.getNextNode();
+        }
+        if (this.headNode === null) {
+            this.headNode = newNode;
+        } else {
+            newNode.setNextNode(current);
+            if (priorNode !== null) {
+                priorNode.setNextNode(newNode);
+            } else {
+                this.headNode = newNode;
+            }
+        }
+    }
 }
