@@ -128,15 +128,22 @@ class SLinkedList {
 }
 
 try {
+    // creates a new singly linked list
     const sll = new SLinkedList();
+    // adds 2 elements at the head and 1 at the tail
     sll.addAtHead(5);
     sll.addAtHead(4);
     sll.addAtTail(7);
+    // displays the size
     console.log(sll.size());
+    // adds an element to the middle
     sll.insertMiddle(8);
+    // displays the size
     console.log(sll.size());
+    // removes the head element and the tail element
     sll.removeAtHead();
     sll.removeAtTail();
+    // displays the size
     console.log(sll.size());
 } catch (err) {
     // catches any exceptions
