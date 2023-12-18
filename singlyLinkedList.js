@@ -49,10 +49,12 @@ class Node {
 
 class SLinkedList {
 
+    // constructor for node with no elements
     constructor() {
         this.headNode = null;
     }
 
+    // returns the size of the singly linked list
     size() {
         let count = 0;
         let current = this.headNode;
@@ -63,12 +65,14 @@ class SLinkedList {
         return count;
     }
 
+    // adds an element at the head of the singly linked list
     addAtHead(index) {
         let newNode = new Node(index);
         newNode.setNextNode(this.headNode);
         this.headNode = newNode;
     }
 
+    // adds an element at the tail of the singly linked list
     addAtTail(index) {
         let newNode = new Node(index);
         if (this.headNode === null) {
@@ -78,6 +82,7 @@ class SLinkedList {
         }
     }
 
+    // removes an element at the head of the singly linked list
     removeAtHead() {
         if (this.headNode === null) {
             return -1;
@@ -88,6 +93,7 @@ class SLinkedList {
         }
     }
 
+    // removes an element at the tail of the singly linked list
     removeAtTail() {
         if (this.headNode === null) {
             return -1;
@@ -98,6 +104,7 @@ class SLinkedList {
         }
     }
 
+    // adds an element in the middle of the singly linked list
     insertMiddle(index) {
         let newNode = new Node(index);
         let middle = this.size() / 2;
