@@ -66,15 +66,15 @@ class SLinkedList {
     }
 
     // adds an element at the head of the singly linked list
-    addAtHead(index) {
-        let newNode = new Node(index);
+    addAtHead(value) {
+        let newNode = new Node(value);
         newNode.setNextNode(this.headNode);
         this.headNode = newNode;
     }
 
     // adds an element at the tail of the singly linked list
-    addAtTail(index) {
-        let newNode = new Node(index);
+    addAtTail(value) {
+        let newNode = new Node(value);
         if (this.headNode === null) {
             this.headNode = newNode;
         } else {
@@ -105,8 +105,8 @@ class SLinkedList {
     }
 
     // adds an element in the middle of the singly linked list
-    insertMiddle(index) {
-        let newNode = new Node(index);
+    insertMiddle(value) {
+        let newNode = new Node(value);
         let middle = this.size() / 2;
         let priorNode = null;
         let current = this.headNode;
