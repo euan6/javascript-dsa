@@ -86,7 +86,7 @@ class SLinkedList {
             return -1;
         } else {
             let returnedNode = new Node(-1);
-            this.headNode = this.headNode.removeAtTail(returnedNode);
+            this.headNode = this.headNode.getNextNode();
             return returnedNode.getValue();
         }
     }
@@ -111,4 +111,20 @@ class SLinkedList {
             }
         }
     }
+}
+
+try {
+    const sll = new SLinkedList();
+    sll.addAtHead(5);
+    sll.addAtHead(4);
+    sll.addAtTail(7);
+    console.log(sll.size());
+    sll.insertMiddle(8);
+    console.log(sll.size());
+    sll.removeAtHead();
+    sll.removeAtTail();
+    console.log(sll.size());
+} catch (err) {
+    // catches any exceptions
+    console.error("Error: ", err.message);
 }
