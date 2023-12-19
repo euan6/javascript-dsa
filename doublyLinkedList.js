@@ -46,6 +46,7 @@ class DLinkedList {
         this.tailNode = null;
     }
 
+    // returns the head value of the doubly linked list
     getHeadValue() {
         if (this.headNode === null) {
             return null;
@@ -53,6 +54,7 @@ class DLinkedList {
         return this.headNode.value;
     }
 
+    // returns the tail value of the doubly linked list
     getTailValue() {
         if (this.tailNode === null) {
             return null;
@@ -60,6 +62,7 @@ class DLinkedList {
         return this.tailNode.value;
     }
 
+    // adds an element at the head of the doubly linked list
     addAtHead(value) {
         let newNode = new Node(value);
         newNode.setNextNode(this.headNode);
@@ -72,6 +75,7 @@ class DLinkedList {
         }
     }
 
+    // adds an element at the tail of the doubly linked list
     addAtTail(value) {
         let newNode = new Node(value);
         if (this.tailNode === null) {
@@ -84,6 +88,7 @@ class DLinkedList {
         }
     }
 
+    // removes an element at the head of the doubly linked list
     removeAtHead() {
         if (this.headNode === null) {
             this.headNode = null;
@@ -102,6 +107,7 @@ class DLinkedList {
         }
     }
 
+    // removes an element at the tail of the doubly linked list
     removeAtTail() {
         if (this.tailNode === null) {
             this.headNode = null;
@@ -119,5 +125,4 @@ class DLinkedList {
             return returnedNode;
         }
     }
-
 }
