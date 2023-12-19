@@ -13,7 +13,7 @@ class Node {
 
     // sets the value of the node
     setValue(x) {
-        value = x;
+        this.value = x;
     }
 
     // returns the next node

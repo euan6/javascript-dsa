@@ -14,7 +14,7 @@ class Node {
 
     // sets the value of the node
     setValue(x) {
-        value = x;
+        this.value = x;
     }
 
     // returns the next node
@@ -113,7 +113,7 @@ class DLinkedList {
         } else {
             let returnedNode = this.headNode.getValue();
             this.headNode = this.headNode.getNextNode();
-            this.headNode.prevNode = null;
+            this.headNode.setPrevNode(null);
             return returnedNode;
         }
     }
@@ -132,7 +132,7 @@ class DLinkedList {
         } else {
             let returnedNode = this.tailNode.getValue();
             this.tailNode = this.tailNode.getPrevNode();
-            this.tailNode.setNextNode() = null;
+            this.tailNode.setNextNode(null);
             return returnedNode;
         }
     }
