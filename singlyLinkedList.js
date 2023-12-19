@@ -125,6 +125,18 @@ class SLinkedList {
             }
         }
     }
+
+    // prints all the elements in the list
+    printList() {
+        let current = this.headNode;
+        for (let i = 1; current !== null; i++) {
+            if (current !== null) {
+                console.log(i + ": " + current.getValue());
+                current = current.getNextNode();
+            }
+        }
+        
+    }
 }
 
 try {
@@ -134,6 +146,7 @@ try {
     sll.addAtHead(5);
     sll.addAtHead(4);
     sll.addAtTail(7);
+    sll.printList();
     // displays the size
     console.log(sll.size());
     // adds an element to the middle
