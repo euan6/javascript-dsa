@@ -149,3 +149,26 @@ class DLinkedList {
         
     }
 }
+
+try {
+    // creates a new singly linked list
+    const dll = new DLinkedList();
+    // adds 2 elements at the head and 1 at the tail
+    dll.addAtHead(5);
+    dll.addAtHead(4);
+    dll.addAtTail(7);
+    // displays all the elements in the list
+    dll.printList();
+    // displays the size
+    console.log("size: " + dll.size());
+    // removes the head element and the tail element
+    dll.removeAtHead();
+    dll.removeAtTail();
+    // displays all the elements in the list
+    dll.printList();
+    // displays the size
+    console.log("size: " + dll.size());
+} catch (err) {
+    // catches any exceptions
+    console.error("Error: ", err.message);
+}
