@@ -146,18 +146,19 @@ try {
     sll.addAtHead(5);
     sll.addAtHead(4);
     sll.addAtTail(7);
+    // displays all the elements in the list
     sll.printList();
     // displays the size
-    console.log(sll.size());
+    console.log("size: " + sll.size());
     // adds an element to the middle
     sll.insertMiddle(8);
     // displays the size
-    console.log(sll.size());
+    console.log("size: " + sll.size());
     // removes the head element and the tail element
     sll.removeAtHead();
     sll.removeAtTail();
     // displays the size
-    console.log(sll.size());
+    console.log("size: " + sll.size());
 } catch (err) {
     // catches any exceptions
     console.error("Error: ", err.message);
