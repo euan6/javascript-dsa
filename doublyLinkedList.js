@@ -37,3 +37,87 @@ class Node {
         this.prevNode = node;
     }
 }
+
+class DLinkedList {
+
+    // constructor for node with no elements
+    constructor() {
+        this.headNode = null;
+        this.tailNode = null;
+    }
+
+    getHeadValue() {
+        if (this.headNode === null) {
+            return null;
+        }
+        return this.headNode.value;
+    }
+
+    getTailValue() {
+        if (this.tailNode === null) {
+            return null;
+        }
+        return this.tailNode.value;
+    }
+
+    addAtHead(value) {
+        let newNode = new Node(value);
+        newNode.setNextNode(this.headNode);
+        if (this.headNode !== null) {
+            this.headNode.setPrevNode(newNode);
+        }
+        this.headNode = newNode;
+        if (this.tailNode === null) {
+            this.tailNode = newNode;
+        }
+    }
+
+    addAtTail(value) {
+        let newNode = new Node(value);
+        if (this.tailNode === null) {
+            this.tailNode = newNode;
+            this.headNode = newNode;
+        } else {
+            newNode.setPrevNode(this.tailNode);
+            this.tailNode.setNextNode(newNode);
+            this.tailNode = newNode;
+        }
+    }
+
+    removeAtHead() {
+        if (this.headNode === null) {
+            this.headNode = null;
+            this.tailNode = null;
+            return null;
+        } else if (this.headNode === this.tailNode) {
+            let returnedNode = this.headNode.getValue();
+            this.headNode = null;
+            this.tailNode = null;
+            return returnedNode.getValue();
+        } else {
+            let returnedNode = this.headNode.getValue();
+            this.headNode = this.headNode.getNextNode();
+            this.headNode.prevNode = null;
+            return returnedNode;
+        }
+    }
+
+    removeAtTail() {
+        if (this.tailNode === null) {
+            this.headNode = null;
+            this.tailNode = null;
+            return null;
+        } else if (this.headNode === this.tailNode) {
+            let returnedNode = this.tailNode.getValue();
+            this.headNode = null;
+            this.tailNode = null;
+            return returnedNode.getValue();
+        } else {
+            let returnedNode = this.tailNode.getValue();
+            this.tailNode = this.tailNode.getPrevNode();
+            this.tailNode.setNextNode() = null;
+            return returnedNode;
+        }
+    }
+
+}
