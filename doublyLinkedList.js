@@ -136,4 +136,16 @@ class DLinkedList {
             return returnedNode;
         }
     }
+
+    // prints all the elements in the list
+    printList() {
+        let current = this.headNode;
+        for (let i = 1; current !== null; i++) {
+            if (current !== null) {
+                console.log(i + ": " + current.getValue());
+                current = current.getNextNode();
+            }
+        }
+        
+    }
 }
