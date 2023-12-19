@@ -46,6 +46,17 @@ class DLinkedList {
         this.tailNode = null;
     }
 
+    // returns the size of the doubly linked list
+    size() {
+        let count = 0;
+        let current = this.headNode;
+        while (current !== null) {
+            count++;
+            current = current.getNextNode();
+        }
+        return count;
+    }
+
     // returns the head value of the doubly linked list
     getHeadValue() {
         if (this.headNode === null) {
