@@ -8,4 +8,8 @@ The first programming concept I have implemented is recursion. I had made a seri
 
 ## Stack
 
-The first data structure which I have implemented is a stack. A stack is a very simple LIFO structure, meaning the first element pushed to a stack is the last element popped from it. I have given the stack several functions such as isEmpty(), size(), push(e), pop() and top().
+The first data structure which I have implemented is a stack. A stack is a very simple LIFO structure, meaning the first element pushed to a stack is the last element popped from it. I have given the stack several functions such as: isEmpty(), size(), push(e), pop() and top().
+
+## Singly Linked List
+
+The next data structure i created was a singly linked list. This is again a simple structure, with an element in the list having a value and then a reference to its next node. This means that each time an element is added or removed its reference node needs to be updated. Some of the functions it can use are: size(), addAtHead(), addAtTail(), removeAtHead(), removeAtTail(), insertMiddle() and printList().
