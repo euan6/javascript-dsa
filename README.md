@@ -13,3 +13,7 @@ The first data structure which I have implemented is a stack. A stack is a very 
 ## Singly Linked List
 
 The next data structure i created was a singly linked list. This is again a simple structure, with an element in the list having a value and then a reference to its next node. This means that each time an element is added or removed its reference node needs to be updated. Some of the functions it can use are: size(), addAtHead(), addAtTail(), removeAtHead(), removeAtTail(), insertMiddle() and printList().
+
+## Doubly Linked List
+
+Similar to the singly linked list, except this data structure has a refernce node to its previous and next element, meaning both of these need updated each time an element is added or removed. Again this has similar functions and the singly linked list such as: size(), getHeadValue(), getTailValue(), addAtHead(), addAtTail(), removeAtHead(), removeAtTail() and printList().
