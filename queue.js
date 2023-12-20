@@ -49,14 +49,23 @@ class Queue {
 }
 
 try {
+    // creates a new queue with capacity 5
     const q = new Queue(5);
+    // check if the queue is empty
     console.log(q.isEmpty());
+    // enqueues 3 elements
     q.enqueue(5);
     q.enqueue(8);
     q.enqueue(2);
+    // displays the front element
+    console.log(q.front());
+    // displays the size
     console.log(q.size());
+    // displays the element dequeued
     console.log(q.dequeue());
+    // displays the size
     console.log(q.size());
+    // displays the element dequeued
     console.log(q.dequeue());
 } catch (err) {
     // catches any exceptions
