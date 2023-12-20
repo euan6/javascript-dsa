@@ -7,7 +7,7 @@ class Stack {
         this.topElement = -1;
     }
 
-    // returns a boolean wether stack is empty or not
+    // returns a boolean whether stack is empty or not
     isEmpty() {
         return this.topElement < 0;
     }
