@@ -2,18 +2,22 @@
 
 In this repository I will be creating several different data structures & algorithms using JavaScript. These will be entirely experimental and just for practice to give myself a challenge.
 
-## Recursion
+    ## Algorithms
 
-The first programming concept I have implemented is recursion. I had made a series of small, common problems which can be easily solved using recursion, such as the fibonacci sequence, calculating factorials and summing up an array.
+        ### Recursion
 
-## Stack
+        The first programming concept I have implemented is recursion. I had made a series of small, common problems which can be easily solved using recursion, such as the fibonacci sequence, calculating factorials and summing up an array.
 
-The first data structure which I have implemented is a stack. A stack is a very simple LIFO structure, meaning the first element pushed to a stack is the last element popped from it. I have given the stack several functions such as: isEmpty(), size(), push(e), pop() and top().
+    ## Data Structures
 
-## Singly Linked List
+        ### Stack
 
-The next data structure i created was a singly linked list. This is again a simple structure, with an element in the list having a value and then a reference to its next node. This means that each time an element is added or removed its reference node needs to be updated. Some of the functions it can use are: size(), addAtHead(), addAtTail(), removeAtHead(), removeAtTail(), insertMiddle() and printList().
+        The first data structure which I have implemented is a stack. A stack is a very simple LIFO structure, meaning the first element pushed to a stack is the last element popped from it. I have given the stack several functions such as: isEmpty(), size(), push(), pop() and top().
 
-## Doubly Linked List
+        ### Singly Linked List
 
-Similar to the singly linked list, except this data structure has a refernce node to its previous and next element, meaning both of these need updated each time an element is added or removed. Again this has similar functions and the singly linked list such as: size(), getHeadValue(), getTailValue(), addAtHead(), addAtTail(), removeAtHead(), removeAtTail() and printList().
+        The next data structure i created was a singly linked list. This is again a simple structure, with an element in the list having a value and then a reference to its next node. This means that each time an element is added or removed its reference node needs to be updated. Some of the functions it can use are: size(), addAtHead(), addAtTail(), removeAtHead(), removeAtTail(), insertMiddle() and printList().
+
+        ### Doubly Linked List
+
+        Similar to the singly linked list, except this data structure has a refernce node to its previous and next element, meaning both of these need updated each time an element is added or removed. Again this has similar functions and the singly linked list such as: size(), getHeadValue(), getTailValue(), addAtHead(), addAtTail(), removeAtHead(), removeAtTail() and printList().
