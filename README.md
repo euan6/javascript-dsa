@@ -12,6 +12,10 @@ The first programming concept I have implemented is recursion. I had made a seri
 
 Linear search is the first searching algorithm which I have implemented. It is very basic as all it does is iterate through an array of eith numbers or strings, and check each element to see if it matches the target value. It then returns true if it is found, else false if it is not found.
 
+### Binary Search
+
+Binary Search is similar to linear search in the way that they are both searching algorithms, however it has a different approach. For binary search to work, the input array or list must be sorted. The algorithm first checks if the target is the middle number, and if not recursively checks either the top or bottom part of the array or list before returing true if the target is found, else false if it is not.
+
 ## Data Structures
 
 ### Stack
