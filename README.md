@@ -8,6 +8,10 @@ In this repository I will be creating several different data structures & algori
 
 The first programming concept I have implemented is recursion. I had made a series of small, common problems which can be easily solved using recursion, such as the fibonacci sequence, calculating factorials and summing up an array.
 
+### Linear Search
+
+Linear search is the first searching algorithm which I have implemented. It is very basic as all it does is iterate through an array of eith numbers or strings, and check each element to see if it matches the target value. It then returns true if it is found, else false if it is not found.
+
 ## Data Structures
 
 ### Stack
