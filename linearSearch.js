@@ -7,3 +7,7 @@ function linearSearchNumber(arr, target) {
     }
     return false;
 }
+// displays the result when searching for 5 and 8
+numbersArr = [1, 2, 3, 4, 5];
+console.log(linearSearchNumber(numbersArr, 5));
+console.log(linearSearchNumber(numbersArr, 8));
