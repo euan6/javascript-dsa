@@ -11,3 +11,13 @@ function linearSearchNumber(arr, target) {
 numbersArr = [1, 2, 3, 4, 5];
 console.log(linearSearchNumber(numbersArr, 5));
 console.log(linearSearchNumber(numbersArr, 8));
+
+// linear search of an array for a string
+function linearSearchString(arr, target) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === target) {
+            return true;
+        }
+    }
+    return false;
+}
