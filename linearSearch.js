@@ -21,3 +21,7 @@ function linearSearchString(arr, target) {
     }
     return false;
 }
+// displays the results when searching for "apple" and "avacado"
+stringsArr = ["apple", "banana", "orange", "grapes"];
+console.log(linearSearchNumber(stringsArr, "apple"));
+console.log(linearSearchNumber(stringsArr, "avacado"));
