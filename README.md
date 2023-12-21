@@ -29,3 +29,7 @@ The next data structure i created was a singly linked list. This is again a simp
 ### Doubly Linked List
 
 Similar to the singly linked list, except this data structure has a refernce node to its previous and next element, meaning both of these need updated each time an element is added or removed. Again this has similar functions and the singly linked list such as: size(), getHeadValue(), getTailValue(), addAtHead(), addAtTail(), removeAtHead(), removeAtTail() and printList().
+
+### Queue
+
+The queue is again a fairly simple data structure. It has a FIFO structure meaning the first element added is the first one to be removed. Elements enter the rear of the queue and are dequeued from the front. The queue uses functions such as isEmpty(), size(), enqueue(), dequeue() and front().
