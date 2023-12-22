@@ -10,11 +10,11 @@ The first programming concept I have implemented is recursion. I had made a seri
 
 ### Linear Search
 
-Linear search is the first searching algorithm which I have implemented. It is very basic as all it does is iterate through an array of eith numbers or strings, and check each element to see if it matches the target value. It then returns true if it is found, else false if it is not found.
+Linear search is the first searching algorithm which I have implemented. It is very basic as all it does is iterate through an array of with numbers or strings, and check each element to see if it matches the target value. It then returns true if it is found, else false if it is not found.
 
 ### Binary Search
 
-Binary Search is similar to linear search in the way that they are both searching algorithms, however it has a different approach. For binary search to work, the input array or list must be sorted. The algorithm first checks if the target is the middle number, and if not recursively checks either the top or bottom part of the array or list before returing true if the target is found, else false if it is not.
+Binary Search is similar to linear search in the way that they are both searching algorithms, however it has a different approach. For binary search to work, the input array or list must be sorted. The algorithm first checks if the target is the middle number, and if not recursively checks either the top or bottom part of the array or list before returning true if the target is found, else false if it is not.
 
 ## Data Structures
 
@@ -28,7 +28,7 @@ The next data structure i created was a singly linked list. This is again a simp
 
 ### Doubly Linked List
 
-Similar to the singly linked list, except this data structure has a refernce node to its previous and next element, meaning both of these need updated each time an element is added or removed. Again this has similar functions and the singly linked list such as: size(), getHeadValue(), getTailValue(), addAtHead(), addAtTail(), removeAtHead(), removeAtTail() and printList().
+Similar to the singly linked list, except this data structure has a reference node to its previous and next element, meaning both of these need updated each time an element is added or removed. Again this has similar functions and the singly linked list such as: size(), getHeadValue(), getTailValue(), addAtHead(), addAtTail(), removeAtHead(), removeAtTail() and printList().
 
 ### Queue
 
