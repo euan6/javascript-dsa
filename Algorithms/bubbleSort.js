@@ -1,4 +1,4 @@
-
+// bubble sort of an array in ascending order
 function bubbleSortAscending(arr) {
     let swaps = true;
     while (swaps) {
@@ -14,3 +14,6 @@ function bubbleSortAscending(arr) {
     }
     return arr;
 }
+// displays the sorted array
+arrayAsc = [5, 7, 2, 4, 1, 9];
+console.log(bubbleSortAscending(arrayAsc));
