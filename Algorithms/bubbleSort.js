@@ -34,3 +34,6 @@ function bubbleSortDescending(arr) {
     }
     return arr;
 }
+// displays the sorted array
+arrayDesc = [5, 7, 2, 4, 1, 9];
+console.log(bubbleSortDescending(arrayDesc));
