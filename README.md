@@ -16,6 +16,10 @@ Linear search is the first searching algorithm which I have implemented. It is v
 
 Binary Search is similar to linear search in the way that they are both searching algorithms, however it has a different approach. For binary search to work, the input array or list must be sorted. The algorithm first checks if the target is the middle number, and if not recursively checks either the top or bottom part of the array or list before returning true if the target is found, else false if it is not.
 
+### Bubble Sort
+
+Bubble sort is the first sorting algorithm which I have implemented. It is fairly simple to understand and write, except this means that it is not the most efficient sorting algorithm. the basic rule is that if the next number in the array is smaller, they swap and it keeps swapping until in position. This happens until each number is in the correct position.
+
 ## Data Structures
 
 ### Stack 📚
