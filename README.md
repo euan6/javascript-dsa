@@ -20,6 +20,10 @@ Binary Search is similar to linear search in the way that they are both searchin
 
 Bubble sort is the first sorting algorithm which I have implemented. It is fairly simple to understand and write, except this means that it is not the most efficient sorting algorithm. the basic rule is that if the next number in the array is smaller, they swap and it keeps swapping until in position. This happens until each number is in the correct position.
 
+### Insertion Sort
+
+Insertion Sort is another sorting algorithm, again fairly simple to implement and understand. It takes the unsorted element and puts it into position in the sorted part of the array. it then finds the next unsorted element and does the same until every element is sorted in position.
+
 ## Data Structures
 
 ### Stack 📚
