@@ -96,19 +96,29 @@ class PriorityQueue {
 }
 
 try {
+    // creates a priority queue with capacity 5
     const pq = new PriorityQueue(5);
+    // checks if the priority queue is empty
     console.log(pq.isEmpty());
+    // inserts 5 elements
     pq.insert(4);
     pq.insert(2);
     pq.insert(7);
     pq.insert(1);
     pq.insert(8);
+    // displays the size
     console.log(pq.size());
+    // displays the smallest value element
     console.log(pq.min());
+    // displays and removes the smallest value element
     console.log(pq.removeMin());
+    // displays the size
     console.log(pq.size());
+    // displays the smallest value element
     console.log(pq.min());
+    // checks if the priority queue is empty
     console.log(pq.isEmpty());
 } catch (err) {
+    // catches any exceptions
     console.error("Error: ", err.message);
 }
