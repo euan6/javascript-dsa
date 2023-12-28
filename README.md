@@ -41,3 +41,7 @@ Similar to the singly linked list, except this data structure has a reference no
 ### Queue 👥
 
 The queue is again a fairly simple data structure. It has a FIFO structure meaning the first element added is the first one to be removed. Elements enter the rear of the queue and are dequeued from the front. The queue uses functions such as isEmpty(), size(), enqueue(), dequeue() and front().
+
+### Priority Queue
+
+Similar to the queue, the priority queue is a data structure that organizes elements in a linear fashion. The difference from a normal queue is that it assigns a priority value to each element which means higher priority elements are removed before lower ones. It uses methods such as isEmpty(), size(), min(), removeMin() and insert(), but also has helper methods such as findMin(), swap(), downHeap() and upHeap().
