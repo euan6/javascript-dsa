@@ -28,19 +28,19 @@ Insertion Sort is another sorting algorithm, again fairly simple to implement an
 
 ### Stack 📚
 
-The first data structure which I have implemented is a stack. A stack is a very simple LIFO structure, meaning the first element pushed to a stack is the last element popped from it. I have given the stack several functions such as: isEmpty(), size(), push(), pop() and top().
+The first data structure which I have implemented is a stack. A stack is a very simple LIFO structure, meaning the first element pushed to a stack is the last element popped from it. I have given the stack several methods such as: isEmpty(), size(), push(), pop() and top().
 
 ### Singly Linked List 📋
 
-The next data structure i created was a singly linked list. This is again a simple structure, with an element in the list having a value and then a reference to its next node. This means that each time an element is added or removed its reference node needs to be updated. Some of the functions it can use are: size(), addAtHead(), addAtTail(), removeAtHead(), removeAtTail(), insertMiddle() and printList().
+The next data structure i created was a singly linked list. This is again a simple structure, with an element in the list having a value and then a reference to its next node. This means that each time an element is added or removed its reference node needs to be updated. Some of the methods it can use are: size(), addAtHead(), addAtTail(), removeAtHead(), removeAtTail(), insertMiddle() and printList().
 
 ### Doubly Linked List ⛓️
 
-Similar to the singly linked list, except this data structure has a reference node to its previous and next element, meaning both of these need updated each time an element is added or removed. Again this has similar functions and the singly linked list such as: size(), getHeadValue(), getTailValue(), addAtHead(), addAtTail(), removeAtHead(), removeAtTail() and printList().
+Similar to the singly linked list, except this data structure has a reference node to its previous and next element, meaning both of these need updated each time an element is added or removed. Again this has similar methods and the singly linked list such as: size(), getHeadValue(), getTailValue(), addAtHead(), addAtTail(), removeAtHead(), removeAtTail() and printList().
 
 ### Queue 👥
 
-The queue is again a fairly simple data structure. It has a FIFO structure meaning the first element added is the first one to be removed. Elements enter the rear of the queue and are dequeued from the front. The queue uses functions such as isEmpty(), size(), enqueue(), dequeue() and front().
+The queue is again a fairly simple data structure. It has a FIFO structure meaning the first element added is the first one to be removed. Elements enter the rear of the queue and are dequeued from the front. The queue uses methods such as isEmpty(), size(), enqueue(), dequeue() and front().
 
 ### Priority Queue
 
