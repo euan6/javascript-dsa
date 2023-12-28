@@ -37,19 +37,19 @@ class PriorityQueue {
     }
 
     // adds an element to the priority queue
-    insert(element) {
+    insert(priority) {
         if (this.last === this.heap.length - 1) {
             throw new Error("Priority Queue is Full");
         }
         this.last++;
-        this.heap[this.last] = element;
+        this.heap[this.last] = priority;
         this.upHeap();
     }
 
     // helper method which returns the index of the smallest child given a parent node
-    findMin(min) {
-        let leftChild = 2 * min;
-        let rightChild = 2 * min + 1;
+    findMin(index) {
+        let leftChild = 2 * index;
+        let rightChild = 2 * index + 1;
         if (rightChild <= this.last) {
             if (this.heap[leftChild] < this.heap[rightChild]) {
                 return leftChild;
