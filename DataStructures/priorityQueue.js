@@ -84,3 +84,21 @@ class PriorityQueue {
     }
 
 }
+
+try {
+    const pq = new PriorityQueue(5);
+    console.log(pq.isEmpty());
+    pq.insert(4);
+    pq.insert(2);
+    pq.insert(7);
+    pq.insert(1);
+    pq.insert(8);
+    console.log(pq.size());
+    console.log(pq.min());
+    console.log(pq.removeMin());
+    console.log(pq.size());
+    console.log(pq.min());
+    console.log(pq.isEmpty());
+} catch (err) {
+    console.error("Error: ", err.message);
+}
