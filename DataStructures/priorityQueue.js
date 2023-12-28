@@ -1,18 +1,22 @@
 class PriorityQueue {
 
+    // constructor for a priority queue with default capacity 1000
     constructor(capacity = 1000) {
         this.heap = new Array(capacity + 1);
         this.last = 0;
     }
 
+    // returns a boolean whether priority queue is empty or not
     isEmpty() {
         return this.last === 0;
     }
 
+    // returns the size of the priority queue
     size() {
         return this.last;
     }
 
+    // returns the smallest value in the priority queue (highest priority)
     min() {
         if (this.isEmpty()) {
             throw new Error("Priority Queue is Empty");
@@ -20,6 +24,7 @@ class PriorityQueue {
         return this.heap[1];
     }
 
+    // removes and returns the smallest value in the priority queue (highest priority)
     removeMin() {
         if (this.isEmpty()) {
             throw new Error("Priority Queue is Empty");
@@ -31,6 +36,7 @@ class PriorityQueue {
         return min;
     }
 
+    // adds an element to the priority queue
     insert(element) {
         if (this.last === this.heap.length - 1) {
             throw new Error("Priority Queue is Full");
@@ -40,6 +46,7 @@ class PriorityQueue {
         this.upHeap();
     }
 
+    // helper method which returns the index of the smallest child given a parent node
     findMin(min) {
         let leftChild = 2 * min;
         let rightChild = 2 * min + 1;
@@ -56,12 +63,14 @@ class PriorityQueue {
         }
     }
 
+    // helper method which swaps 2 elements in the heap array
     swap(i, j) {
         let temp = this.heap[i];
         this.heap[i] = this.heap[j];
         this.heap[j] = temp;
     }
 
+    // down heap method which updates the priority queue order when removing the smallest value element
     downHeap() {
         let current = 1;
         while (current <= Math.floor(this.last / 2)) {
@@ -75,6 +84,7 @@ class PriorityQueue {
         }
     }
 
+    // up heap method which updates the priority queue order when inserting an element
     upHeap() {
         let current = this.last;
         while (current > 1 && this.heap[current] < this.heap[Math.floor(current / 2)]) {
