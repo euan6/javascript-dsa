@@ -24,7 +24,7 @@ Bubble sort is the first sorting algorithm which I have implemented. It is fairl
 
 Insertion Sort is another sorting algorithm, again fairly simple to implement and understand. It takes the unsorted element and puts it into position in the sorted part of the array. it then finds the next unsorted element and does the same until every element is sorted in position.
 
-### Merge Sort
+### Merge Sort 🔗
 
 The next sorting algorithm I have implemented is merge sort. This is a divide and conquer algorithm which means it splits the unsorted array into smaller sub arrays, it then sorts these smaller arrays and then joins them back together in the sorted order.
 
