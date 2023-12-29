@@ -19,7 +19,7 @@ function mergeSortAscending(arr) {
         }
         left = mergeSortAscending(left);
         right = mergeSortAscending(right);
-        merge(left, right, arr);
+        mergeAscending(left, right, arr);
     }
     return arr;
 }
@@ -47,3 +47,7 @@ function mergeAscending(left, right, arr) {
         index++;
     }
 }
+
+// displays the sorted array
+arrayAsc = [5, 7, 2, 4, 1, 9];
+console.log(mergeSortAscending(arrayAsc));
