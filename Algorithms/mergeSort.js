@@ -1,4 +1,4 @@
-
+// merge sort of an array in ascending order
 function mergeSortAscending(arr) {
     let arrLength = arr.length;
     if (arrLength < 2) {
@@ -23,7 +23,7 @@ function mergeSortAscending(arr) {
     }
     return arr;
 }
-
+// helper function which merges the sub arrays together
 function mergeAscending(left, right, arr) {
     let index = 0, leftIndex = 0, rightIndex = 0;
     while (leftIndex < left.length && rightIndex < right.length) {
