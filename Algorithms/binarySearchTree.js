@@ -27,3 +27,44 @@ class BSTNode {
     }
 
 }
+
+class BinarySearchTree {
+
+    constructor() {
+        this.rootNode = null;
+    }
+
+    isEmpty() {
+        return this.rootNode === null;
+    }
+
+    size() {
+        if (this.rootNode === null) {
+            return 0;
+        } else {
+            return this.rootNode.numberOfNodes();
+        }
+    }
+
+    insert(value) {
+        if (this.rootNode === null) {
+            this.rootNode = new BSTNode(value);
+        } else {
+            this.rootNode.insert(new BSTNode(value));
+        }
+    }
+
+    delete(value) {
+        if (!this.rootNode === null) {
+            this.rootNode = this.rootNode.delete(value);
+        }
+    }
+
+    search(value) {
+        if (this.rootNode !== null) {
+            return this.rootNode.search(value);
+        } else {
+            return false;
+        }
+    }
+}
