@@ -49,3 +49,7 @@ The queue is again a fairly simple data structure. It has a FIFO structure meani
 ### Priority Queue 🥇
 
 Similar to the queue, the priority queue is a data structure that organizes elements in a linear fashion. The difference from a normal queue is that it assigns a priority value to each element which means higher priority elements are removed before lower ones. It uses methods such as isEmpty(), size(), min(), removeMin() and insert(), but also has helper methods such as findMin(), swap(), downHeap() and upHeap().
+
+### Binary Search Tree
+
+The binary search tree is a unique data structure which stores elements in order of value, with larger values going down the right subtree and smaller values to the left. The tree is made up of roots and leaves with branches being related by their values. The binary search tree uses methods such as isEmpty(), size(), insert(), search() and delete(), but also uses helper methods like getLargestNodeValue() and numberOfNodes().
