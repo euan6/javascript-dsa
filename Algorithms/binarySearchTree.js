@@ -51,7 +51,7 @@ class BSTNode {
             } else {
                 return false;
             }
-        } else if (v > this.value) {
+        } else if (value > this.value) {
             if (this.getRightChild() !== null) {
                 return this.getRightChild().search(value);
             } else {
@@ -63,10 +63,10 @@ class BSTNode {
 
     delete(value) {
         if (value !== this.value) {
-            if (v < this.value && this.getLeftChild() !== null) {
+            if (value < this.value && this.getLeftChild() !== null) {
                 this.leftChild = this.getLeftChild().delete(value);
                 return this;
-            } else if (v > this.value && this.getRightChild() !== null) {
+            } else if (value > this.value && this.getRightChild() !== null) {
                 this.rightChild = this.getRightChild().delete(value);
                 return this;
             } else {
@@ -119,11 +119,7 @@ class BinarySearchTree {
     }
 
     size() {
-        if (this.rootNode === null) {
-            return 0;
-        } else {
-            return this.rootNode.numberOfNodes();
-        }
+        return this.rootNode ? this.rootNode.numberOfNodes() : 0;
     }
 
     insert(value) {
@@ -135,7 +131,7 @@ class BinarySearchTree {
     }
 
     delete(value) {
-        if (!this.rootNode === null) {
+        if (this.rootNode !== null) {
             this.rootNode = this.rootNode.delete(value);
         }
     }
@@ -147,4 +143,20 @@ class BinarySearchTree {
             return false;
         }
     }
+}
+
+try {
+    const bst = new BinarySearchTree();
+    console.log(bst.isEmpty());
+    bst.insert(8);
+    bst.insert(3);
+    bst.insert(7);
+    console.log(bst.isEmpty());
+    console.log(bst.size());
+    console.log(bst.search(8));
+    console.log(bst.search(4));
+    bst.delete(8);
+    console.log(bst.size());
+} catch (err) {
+    console.log("Error: ", err.message);
 }
